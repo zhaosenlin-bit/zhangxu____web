@@ -50,3 +50,12 @@ npm.cmd run build    # 构建到 dist/
 ## 部署
 
 构建产物在 dist/，可直接上传到 Cloudflare Pages / Vercel / Netlify。
+
+## 词域探险（网页版游戏）
+
+背单词 Roguelike 网页版已随本站一起发布：
+
+- 入口：`/cartoon/vocab/`（线上即 https://senlin-c1n.pages.dev/cartoon/vocab/）
+- 源码位于 `public/vocab/`（纯 HTML + Canvas + JS，无框架，构建时随站点一起复制到 dist）
+- 玩法：拾取中文词块 → 发射射击身上带英文单词的怪物 → 怪物被击中会进入「暴怒」状态
+- 游戏源码项目：https://github.com/zhaosenlin12-creator/vocab-roguelike

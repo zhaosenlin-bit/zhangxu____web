@@ -104,6 +104,15 @@ export const galleryProjects = [
     url: '#',
     techStack: [],
   },
+  {
+    title: '词域探险',
+    subtitle: '背单词 Roguelike 网页版',
+    description: '拾取中文词块射击英文单词怪物 · 含暴怒机制 · 网页版上线 2026。',
+    front: '/cartoon/vocab/cover.png',
+    painted: '/cartoon/vocab/cover.png',
+    url: '/cartoon/vocab/',
+    techStack: [],
+  },
 ];
 
 export const studioContent = [
