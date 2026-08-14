@@ -7,7 +7,9 @@ import { useScene } from '../context/SceneContext';
  */
 
 const SITE_URL = typeof window !== 'undefined' ? window.location.origin : 'https://senlin.codebn.cn';
-const BASE = '/cartoon';
+// Derive base from Vite's build base so the site works under any subpath
+// (Cloudflare: /cartoon ; GitHub Pages: /zhangxu____web/cartoon or repo root).
+const BASE = (import.meta.env.BASE_URL || '/cartoon/').replace(/\/+$/, '');
 
 const ROOM_META = {
     null: {

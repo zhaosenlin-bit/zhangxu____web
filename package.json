@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "assets:webp": "node scripts/optimize-images.mjs",
-    "assets:video": "node scripts/transcode-videos.mjs"
+    "assets:video": "node scripts/transcode-videos.mjs",
+    "deploy:ghpages": "node scripts/deploy-github-pages.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
