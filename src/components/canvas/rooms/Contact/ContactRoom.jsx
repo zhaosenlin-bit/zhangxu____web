@@ -1,4 +1,4 @@
-﻿import { useRef, useState, useEffect, useCallback } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import { Text, PositionalAudio } from '@react-three/drei';
 import * as THREE from 'three';
@@ -249,7 +249,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
 
     const handleMailSelect = () => {
         // Awaryjne przekierowanie mailto:
-        window.location.href = 'mailto:zhaosenlin12@gmail.com';
+        window.location.href = 'mailto:TODO@example.com';
 
         /* 
         setShowSelection(false);
@@ -397,65 +397,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 ))}
             </group>
 
-            {/* 🎯 靶子 SOCIAL BARRELS (森林的联系方式) */}
-            {/* 微信 */}
-            <SocialBarrel
-                position={isMobile ? [-1.6, 0.5, -10] : [-4, 0.5, -10]}
-                rotation={[0, 0.2, 0]}
-                texturePath="/cartoon/textures/contact/beczka.webp"
-                label="微信"
-                onClick={() => openOverlay({
-                    layout: 'photo',
-                    title: '微信 · 扫码加我',
-                    description: '\u5fae\u4fe1 zhaosenlin12 \u00b7 \u626b\u4e00\u626b\u52a0\u6211\u597d\u53cb',
-                    image: '/cartoon/media/qr/wechat.jpg',
-                    url: '',
-                })}
-                paintOnBeforeCompile={onBeforeCompile}
-                paintUniforms={uniformsData}
-            />
-            {/* 抖音 */}
-            <SocialBarrel
-                position={isMobile ? [-1.6, -0.3, -7] : [-4, -0.3, -8]}
-                rotation={[0, 0.3, 0]}
-                texturePath="/cartoon/textures/contact/beczka.webp"
-                label="抖音"
-                onClick={() => window.open('https://www.douyin.com/user/MS4wLjABAAAAxHHFo-1JZJ3GPL_HYbgUo6X7hN5jWrk5wJUYl42rgW0', '_blank')}
-                paintOnBeforeCompile={onBeforeCompile}
-                paintUniforms={uniformsData}
-            />
-            {/* 邮件 */}
-            <SocialBarrel
-                position={isMobile ? [0, 0.5, -10] : [0, 0.5, -10]}
-                rotation={[0, 0, 0]}
-                texturePath="/cartoon/textures/contact/beczka.webp"
-                label="邮件"
-                onClick={() => {
-                    const email = 'zhaosenlin12@gmail.com';
-                    if (navigator.clipboard && navigator.clipboard.writeText) {
-                        navigator.clipboard.writeText(email).catch(() => {});
-                    }
-                    openOverlay({
-                        layout: 'photo',
-                        title: '邮件 · 写信给我',
-                        description: '\u5730\u5740\uff1azhaosenlin12@gmail.com\uff08\u5df2\u590d\u5236\uff09\u3002\u70b9\u201c\u6253\u5f00\u90ae\u7bb1\u201d\u8df3\u8f6c\u672c\u5730\u90ae\u4ef6\u5ba2\u6237\u7aef\u3002',
-                    image: '/cartoon/media/qr/email-card.svg',
-                    url: 'mailto:zhaosenlin12@gmail.com',
-                    });
-                }}
-                paintOnBeforeCompile={onBeforeCompile}
-                paintUniforms={uniformsData}
-            />
-            {/* GitHub */}
-            <SocialBarrel
-                position={isMobile ? [0, -0.3, -8] : [0, -0.3, -8]}
-                rotation={[0, 0, 0]}
-                texturePath="/cartoon/textures/contact/beczka.webp"
-                label="GitHub"
-                onClick={() => window.open('https://github.com/zhaosenlin12-creator', '_blank')}
-                paintOnBeforeCompile={onBeforeCompile}
-                paintUniforms={uniformsData}
-            />
+            {/* 🎯 靶子 SOCIAL BARRELS (张旭的联系方式) */}
             {/* 电话 */}
             <SocialBarrel
                 position={isMobile ? [1.6, 0.5, -10] : [4, 0.5, -10]}
@@ -465,15 +407,15 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 onClick={() => {
                     const mobile = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
                     if (mobile) {
-                        window.location.href = 'tel:13071210697';
+                        window.location.href = 'tel:13872498847';
                         return;
                     }
                     openOverlay({
                         layout: 'photo',
                         title: '电话 · 加我联系',
-                        description: '\u624b\u673a\u53f7\uff1a13071210697\uff08\u53f3\u4e0a\u89d2\u70b9\u51fb\u590d\u5236\uff09\u3002\u79fb\u52a8\u7aef\u70b9\u51fb\u540e\u4f1a\u81ea\u52a8\u62e8\u53f7\u3002',
+                        description: '\u624b\u673a\u53f7\uff1a13872498847\uff08\u53f3\u4e0a\u89d2\u70b9\u51fb\u590d\u5236\uff09\u3002\u79fb\u52a8\u7aef\u70b9\u51fb\u540e\u4f1a\u81ea\u52a8\u62e8\u53f7\u3002',
                     image: '/cartoon/media/qr/phone-card.svg',
-                    url: 'tel:13071210697',
+                    url: 'tel:13872498847',
                     });
                 }}
                 paintOnBeforeCompile={onBeforeCompile}
@@ -485,13 +427,39 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 rotation={[0, -0.3, 0]}
                 texturePath="/cartoon/textures/contact/beczka.webp"
                 label="B站"
-                onClick={() => window.open('https://space.bilibili.com/320621515', '_blank')}
+                onClick={() => window.open('https://space.bilibili.com/3632311960603229', '_blank')}
                 paintOnBeforeCompile={onBeforeCompile}
                 paintUniforms={uniformsData}
             />
 
 
-            {/* ⚓ DOCK / MOLO */}
+                        {/* QQ */}
+            <SocialBarrel
+                position={isMobile ? [1.6, -1.1, -5] : [4, -1.1, -6]}
+                rotation={[0, -0.4, 0]}
+                texturePath="/cartoon/textures/contact/beczka.webp"
+                label="QQ"
+                onClick={() => {
+                    const mobile = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+                    if (mobile) {
+                        window.open('https://wpa.qq.com/msgrd?v=3&uin=1658353108&site=qq&menu=yes', '_blank');
+                        return;
+                    }
+                    openOverlay({
+                        layout: 'photo',
+                        title: 'QQ \u00b7 \u52a0\u6211\u597d\u53cb',
+                        description: 'QQ\u53f7\uff1a1658353108\uff08\u70b9\u51fb\u4e0b\u65b9\u6309\u94ae\u52a0\u597d\u53cb\uff09\u3002',
+                        image: '/cartoon/media/qr/qq-card.svg',
+                        url: 'https://wpa.qq.com/msgrd?v=3&uin=1658353108&site=qq&menu=yes',
+                        actionLabel: '\u52a0\u597d\u53cb',
+                    });
+                }}
+                paintOnBeforeCompile={onBeforeCompile}
+                paintUniforms={uniformsData}
+            />
+
+
+{/* ⚓ DOCK / MOLO */}
             <mesh
                 position={[0, 0.05, 1.8]}
                 rotation={[-Math.PI / 2, 0, 0]}

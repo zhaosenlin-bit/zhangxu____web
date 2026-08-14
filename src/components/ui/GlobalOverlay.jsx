@@ -543,6 +543,18 @@ const ContentCard = ({ content, isOpen, onClose, isMobile }) => {
                                     {content.description}
                                 </p>
                             )}
+                            {content.url && !String(content.url).startsWith('tel:') && (
+                                <div style={{ marginTop: '0.9rem', textAlign: 'center', ...getStaggerStyle(400) }}>
+                                    <a
+                                        href={content.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="studio-action-button"
+                                    >
+                                        {content.actionLabel || '打开链接'} ↗
+                                    </a>
+                                </div>
+                            )}
                         </>
                     ) : (
                         /* === LAYOUT: DEFAULT (The Studio Style) === */

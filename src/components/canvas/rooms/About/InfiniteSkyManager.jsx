@@ -356,7 +356,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 font="/cartoon/fonts/ZCOOLKuaiLe-Regular.ttf"
                 fontSize={1.6}
             >
-                森林 SENLIN
+                张旭 ZHANGXU
             </Text>
 
             {/* Subtitle - Brand (spreads right) */}
@@ -369,7 +369,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 anchorY="middle"
                 font="/cartoon/fonts/ZCOOLKuaiLe-Regular.ttf"
             >
-                创意教育 · 代码 · 作品
+                六年级 · AI 应用开发者 · 机器人选手
             </Text>
 
             {/* Avatar on cloud - floating + spreads up-left */}
@@ -393,7 +393,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 font="/cartoon/fonts/ZCOOLKuaiLe-Regular.ttf"
                 fontSize={0.45}
             >
-                我是森林,一位手艺人出身的教练。            </Text>
+                我是张旭，一个做过世界机器人大赛二等奖的六年级程序员。            </Text>
 
             {/* Motto - Line 2 (spreads left) */}
             <Text

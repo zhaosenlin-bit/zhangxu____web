@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Texture Preload List - full set for desktop, smaller core set for low-end/mobile entry
  */
 
@@ -184,7 +184,7 @@ export const GALLERY_TEXTURES = [
         `/cartoon/textures/gallery/${name}.webp`,
         name === 'csslogo' ? `/cartoon/textures/gallery/css3logo_painted.webp` : `/cartoon/textures/gallery/${name}_painted.webp`
     ]),
-    // Real app screenshots (妫灄浣滃搧搴旂敤)
+    // Real app screenshots (张旭作品应用)
     '/cartoon/media/apps/python-adventure.jpg',
     '/cartoon/media/apps/class-system.jpg',
     '/cartoon/media/apps/ai-classroom.jpg',
@@ -297,7 +297,7 @@ export const STUDIO_TEXTURES = [
     '/cartoon/textures/studio/phone_back_painted.webp',
     '/cartoon/textures/studio/phone_side.webp',
     '/cartoon/textures/studio/phone_side_painted.webp',
-    // 妫灄瑙嗛缂╃暐鍥?    '/cartoon/media/thumbs/personal-site.webp',
+    // 张旭视频缩略图    '/cartoon/media/thumbs/personal-site.webp',
     '/cartoon/media/thumbs/interactive-knowledge.webp',
     '/cartoon/media/thumbs/color-english.webp',
     '/cartoon/media/thumbs/wechat-01.webp',
@@ -313,7 +313,7 @@ export const STUDIO_TEXTURES = [
     '/cartoon/textures/studio/tvfront_filmikprojektdlamultiego_painted.webp',
 ];
 
-// Moments Room textures (瀹炴媿鐓х墖)
+// Moments Room textures (实拍照片)
 export const MOMENTS_TEXTURES = [
     // 12 gallery photos
     '/cartoon/media/gallery/wrc7.jpg',
@@ -406,4 +406,3 @@ export const filterTexturesByDevice = (list, usePainted) => {
         return usePainted;
     });
 };
-

@@ -66,7 +66,7 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
 
     // Tagline words for split effect (Chinese) - coherent phrase
     const taglineWords = useMemo(() => [
-        { text: '在森林', baseX: -1.35, splitDir: -1.0, delay: 0 },
+        { text: '在张旭', baseX: -1.35, splitDir: -1.0, delay: 0 },
         { text: '里', baseX: 0, splitDir: 0, delay: 0 },
         { text: '创作', baseX: 1.35, splitDir: 1.0, delay: 0 },
     ], []);

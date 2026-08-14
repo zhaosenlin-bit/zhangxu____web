@@ -24,7 +24,7 @@ const ROOM_DESCRIPTIONS = {
     gallery: '我的真实作品与应用,点击卡片可访问在线链接。',
     studio: '视频与作品:个人站搭建、互动知识课堂、色彩英语、AI 演示与课堂实录。',
     moments: '六年教学现场的照片墙,点击可查看大图。',
-    contact: '联系方式:微信扫码、抖音主页、邮箱、GitHub、电话与 B 站。',
+    contact: '联系方式：电话、B 站与 QQ。',
 };
 
 const ScreenReaderOverlay = () => {
@@ -38,11 +38,11 @@ const ScreenReaderOverlay = () => {
             </a>
 
             <nav id="sr-main-nav" className="sr-only" aria-label="作品集房间导航">
-                <h1>森林 · Senlin 创意教育个人站</h1>
+                <h1>张旭 · 个人站</h1>
                 <h2>房间导航</h2>
 
                 {!hasEntered && (
-                    <p>欢迎来到森林的 3D 交互个人站。点击或按回车进入走廊。</p>
+                    <p>欢迎来到张旭的 3D 交互个人站。点击或按回车进入走廊。</p>
                 )}
 
                 {hasEntered && !isInRoom && (

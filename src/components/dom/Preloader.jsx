@@ -350,6 +350,27 @@ const Preloader = ({ onComplete, ready }) => {
     }, '-=0.5');
   };
 
+  // Safety net 1: if assets finished loading but the scene never signals
+  // ready (e.g. GPU shader warmup hangs), force-finish the preloader so
+  // the site is never stuck on a blank screen.
+  useEffect(() => {
+    if (!active && !ready && !exitStarted.current) {
+      const timer = setTimeout(() => {
+        if (!exitStarted.current) startExit();
+      }, 6000);
+      return () => clearTimeout(timer);
+    }
+  }, [active, ready]);
+
+  // Safety net 2: absolute cap - even if an asset stalls forever, always
+  // reveal the site after a bounded wait.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!exitStarted.current) startExit();
+    }, 12000);
+    return () => clearTimeout(timer);
+  }, []);
+
   if (isDone) return null;
 
   const pathLength = 120;

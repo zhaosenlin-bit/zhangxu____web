@@ -1,4 +1,4 @@
-import { useRef, useState, Suspense } from 'react';
+import { useRef, useState, useEffect, useCallback, Suspense } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 
 // Eagerly import all room components
@@ -25,10 +25,30 @@ const RoomWarmup = ({ onWarmupComplete, isLowTier }) => {
     const [isDone, setIsDone] = useState(false);
     const frameCount = useRef(0);
     const completeFired = useRef(false);
+    const warmupDoneRef = useRef(false);
     const { gl, scene, camera } = useThree();
 
     // Wait for rooms to render a few frames, then compile and unmount
     const warmupStart = useRef(performance.now());
+
+    const finishWarmup = useCallback(() => {
+        if (warmupDoneRef.current) return;
+        warmupDoneRef.current = true;
+        completeFired.current = true;
+
+        requestAnimationFrame(() => {
+            setIsDone(true);
+            onWarmupComplete?.();
+        });
+    }, [onWarmupComplete]);
+
+    // Safety net: never block the site on shader compilation.
+    // Some WebGL drivers never resolve compileAsync(), so force-finish
+    // warmup after a bounded time to avoid a stuck preloader.
+    useEffect(() => {
+        const timeoutId = setTimeout(finishWarmup, 6000);
+        return () => clearTimeout(timeoutId);
+    }, [finishWarmup]);
 
     useFrame(() => {
         if (isDone || completeFired.current) return;
@@ -44,15 +64,6 @@ const RoomWarmup = ({ onWarmupComplete, isLowTier }) => {
         if (frameCount.current >= targetFrames) {
             completeFired.current = true;
 
-            const finishWarmup = () => {
-                const warmupDuration = ((performance.now() - warmupStart.current) / 1000).toFixed(2);
-                // console.info(`🔥 GPU/Shader Warmup Complete: ${warmupDuration}s ${isLowTier ? '(Bypassed for LOW tier)' : ''}`);
-                
-                requestAnimationFrame(() => {
-                    setIsDone(true);
-                    onWarmupComplete?.();
-                });
-            };
 
             // On low tier, bypass intense gl.compileAsync to save memory and avoid Context Lost
             if (isLowTier) {

@@ -12,38 +12,38 @@ const BASE = '/cartoon';
 const ROOM_META = {
     null: {
         path: BASE + '/',
-        title: '森林 · Senlin Studio — 创意教育者个人站',
-        description: '森林(Senlin),六年创意编程课堂的教育者。Python、C++、Web、AI 与机器人教学,陪学生从一行代码到一份作品。',
+        title: '张旭 · 个人站',
+        description: '我是张旭，一个做过世界机器人大赛二等奖的六年级程序员，正在建个人站与知识库。'
     },
     about: {
         path: BASE + '/about',
-        title: '关于我 · 森林 Senlin',
-        description: '我是森林,乐启享合伙人 · 副校长,六年项目式编程课堂经验,指导 1000+ 学生,上线 120+ 作品。',
+        title: '关于我 · 张旭 ZHANGXU',
+        description: '张旭 · 六年级 · AI 应用开发者 · 机器人选手。2025 WRC 北京赛区二等奖；多个 AI 项目；个人知识库在建。'
     },
     practice: {
         path: BASE + '/practice',
-        title: '教学方向 · Python / C++ / AI / 机器人',
-        description: 'Python 项目式入门、C++ NOI/CSP 竞赛、AI 互动课堂、机器人比赛,每一门课都从作品出发。',
+        title: '学习方向 · 张旭',
+        description: 'Vibe Coding + AI 应用开发 + 黑客松准备；机器人 WRC 备赛；编程 / AI / 硬件 / 比赛 / 表达 5 维成长。'
     },
     gallery: {
         path: BASE + '/gallery',
-        title: '项目应用 · 森林作品集',
-        description: 'Python 冒险岛、class 教学系统、AI 互动课堂、乐启享打字等 7 个项目应用,点击即可打开。',
+        title: '作品集 · 张旭',
+        description: '探索宇宙（AI 编程 / Web 3D / 游戏）· 世界机器人大赛项目 · 个人站搭建记录。'
     },
     studio: {
         path: BASE + '/studio',
-        title: '创作现场 · 视频与作品',
-        description: '个人站搭建全流程、互动知识课堂、色彩英语 AI 演示与课堂实录视频,还有抖音主页入口。',
+        title: '创作现场 · 张旭',
+        description: '黑板课堂记录 · Vibe Coding 实战 · 个人知识库 daily 精选。'
     },
     moments: {
         path: BASE + '/moments',
-        title: '掠影 · 照片墙',
-        description: '六年教学现场的 23 张照片:课堂、比赛、工作坊与学生作品,教室全景视频背景。',
+        title: '掠影 · 张旭',
+        description: '日常学习、机器人训练、作品与比赛瞬间的照片集。'
     },
     contact: {
         path: BASE + '/contact',
-        title: '联系森林 · 微信 / 抖音 / 邮件 / GitHub',
-        description: '微信扫码、抖音主页、邮件 zhaosenlin12@gmail.com、电话 13071210697、GitHub 与 B 站。',
+        title: '联系张旭 · 电话 / B站 / QQ',
+        description: '联系方式见个人站 contact 房间，或扫码加我好友。'
     },
 };
 

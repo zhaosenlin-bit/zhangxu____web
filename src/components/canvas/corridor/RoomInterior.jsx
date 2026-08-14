@@ -27,7 +27,7 @@ const SUBTITLES = {
     '作品应用': '7 个项目,点击卡片打开',
     '创作现场': '视频作品与课堂实录',
     '掠影照片': '23 张照片 · 教室全景',
-    '联系我': '微信 / 抖音 / 邮件 / GitHub / 电话 / B站'
+    '联系我': '电话 / B站'
 };
 
 // Naturalny kafelek listwy: 1582x94px przy wysokości 0.15 → ~2.524 units szerokości

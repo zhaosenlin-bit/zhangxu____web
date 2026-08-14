@@ -18,7 +18,7 @@ import { useGalleryProjects } from '../../../../hooks/useSanityData';
 const _tempScale = new THREE.Vector3();
 
 // ============================================
-// 閳挎瑱绗?AUDIO SETTINGS - TWEAK HERE
+// 音频设置 · AUDIO SETTINGS - TWEAK HERE
 // 编辑这个值改变鸟的位置和距离、城市噪声的范围
 // ============================================
 export const AUDIO_SETTINGS = {
@@ -34,75 +34,9 @@ export const GALLERY_INTERACTION_AUDIO_SETTINGS = {
 };
 
 // Define the unique projects and their textures
-const FALLBACK_PROJECTS = [
-    {
-        id: 'python-adventure',
-        title: 'Python 探险',
-        front: '/cartoon/media/apps/python-adventure.jpg',
-        painted: '/cartoon/media/apps/python-adventure.jpg',
-        url: 'https://game.codebn.cn/',
-        description: '从不会写代码到说"太难"？Python 入门像是一座一座小岛，走完每座小岛带走的作品，慢慢长出来。',
-        techStack: []
-    },
-    {
-        id: 'class-system',
-        title: 'class 教学系统',
-        front: '/cartoon/media/apps/class-system.jpg',
-        painted: '/cartoon/media/apps/class-system.jpg',
-        url: 'https://class.codebn.cn/',
-        description: '上完一节课，交上作业，预约下一次课，都能在这里。老师把课堂、教研、辅导全都收拢在这，老师能全心上课。',
-        techStack: []
-    },
-    {
-        id: 'ai-classroom',
-        title: 'AI 互动课堂',
-        front: '/cartoon/media/apps/ai-classroom.jpg',
-        painted: '/cartoon/media/apps/ai-classroom.jpg',
-        url: 'https://ai.codebn.cn/',
-        description: '让这里 AI 不是只能听说看的新鲜事。学生会拿着他们自己做的 AI 变成可以动手、可以对话、可以交流的伙伴。',
-        techStack: []
-    },
-    {
-        id: 'code-research',
-        title: 'Code Research',
-        front: '/cartoon/media/apps/code-research.jpg',
-        painted: '/cartoon/media/apps/code-research.jpg',
-        // The old codebn.cn/code-research endpoint currently returns 404.
-        url: '',
-        description: '不是为了学生做研发的镜头。他们自己提作品、自己记笔记、自己上讲台讲故事，都在这里被记住。',
-        techStack: []
-    },
-    {
-        id: 'typing-lab',
-        title: '启航打字',
-        front: '/cartoon/media/apps/typing.jpg',
-        painted: '/cartoon/media/apps/typing.jpg',
-        url: 'https://game.codebn.cn/typing/index.html',
-        description: '从不会的人挑起的打字基础。上台就是几十个字符的飞机花朵，学生打着打着指头越来越熟练。',
-        techStack: []
-    },
-    {
-        id: 'sim-lab',
-        title: '3D 模拟实验室',
-        front: '/cartoon/media/apps/sim-lab.jpg',
-        painted: '/cartoon/media/apps/sim-lab.jpg',
-        // The old codebn.cn/sim-lab endpoint currently returns 404.
-        url: '',
-        description: '从比较生动的实验站。抽签的算法变成好看的动画，学生不只是看，是动手虚拟机器里的一部分。',
-        techStack: []
-    },
-    {
-        id: 'model-trainer',
-        title: '模型训练',
-        front: '/cartoon/media/apps/model-trainer.jpg',
-        painted: '/cartoon/media/apps/model-trainer.jpg',
-        // The old codebn.cn/model-trainer endpoint currently returns 404.
-        url: '',
-        description: '学生花上几个小时，看模型的怎么怎么不说？逐步变得明白。',
-        techStack: []
-    },
-]
+import { galleryProjects } from '../../../../config/userContent.js';
 
+const FALLBACK_PROJECTS = galleryProjects;
 const PROJECT_COUNT = 10; // Keep the count for the infinite scroll feel
 const GAP = 2.5;
 
@@ -644,7 +578,7 @@ const FlyingBird = ({ texture }) => {
     const birdRef = useRef();
     const startX = -25;
     const endX = 25;
-    const speed = 2.5; // Zmniejszona prX媎koXｈ啺 lotu
+    const speed = 2.5; // Zmniejszona prędkość (w locie)
 
     // Zmienne do fizyki skokXX
     const velocityY = useRef(0);
@@ -655,7 +589,7 @@ const FlyingBird = ({ texture }) => {
     useFrame((state, delta) => {
         if (!birdRef.current) return;
 
-        // Zabezpieczenie przed zbyt duX秠m powiX媖szeniem delty (przy lagach)
+        // Zabezpieczenie przed zbyt dużym powiększeniem delty (przy lagach)
         const safeDelta = Math.min(delta, 0.05);
 
         // Ruch w poziomie
@@ -676,10 +610,10 @@ const FlyingBird = ({ texture }) => {
         // Skakanie (pXXnniejsze i przewidywalne)
         jumpInterval.current -= safeDelta;
 
-        // Skok nastX媝uje po upXXwie czasu przewidzianego do nastX媝nego klikniX媍ia
+        // Skok następuje po upływie czasu przewidzianego do następnego kliknięcia
         if (jumpInterval.current <= 0 || birdRef.current.position.y < 3.2) {
             velocityY.current = jumpStrength;
-            // Rzadsze, bardziej rytmiczne skoki (np. co peX俷X?sekundX?
+            // Rzadsze, bardziej rytmiczne skoki (np. co pełną sekundę)
             jumpInterval.current = 0.9 + Math.random() * 0.3;
         }
 
@@ -696,7 +630,7 @@ const FlyingBird = ({ texture }) => {
         }
 
         // Rotacja ptaka
-        // W Flappy Bird ptak delikatnie opada dziobem w dX歌墏 gdy spada, i kieruje wzrok do gXXy gdy skacze
+        // W Flappy Bird ptak delikatnie opada dziobem w dół gdy spada, i kieruje wzrok do góry gdy skacze
         const targetRotationZ = THREE.MathUtils.clamp(velocityY.current * 0.05, -Math.PI / 6, Math.PI / 8);
 
         // Bardzo pXXnne obracanie (lerp)
@@ -1008,7 +942,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
             }
         }
 
-        // --- ZrXXnaj pozycjX?tekstu Z z animacjX?zaginania i falowania kartki (PRZ鑴獶) ---
+        // --- Zmień pozycję tekstu Z z animacją zaginania i falowania kartki (PRZÓD) ---
         if (textRef.current && materialRef.current) {
             const y = textRef.current.position.y;
             const uBend = materialRef.current.bend;
@@ -1021,7 +955,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
 
             textRef.current.position.z = bendAmount + flutter + 0.02;
 
-            // ObrX竧 tekstu by przylegaX?do krzywizny (pochodna dz/dy)
+            // Obróć tekst by przylegał do krzywizny (pochodna dz/dy)
             const dz_dy = 2.0 * y * uBend + 2.0 * Math.cos(uTime * 2.0 + y * 2.0) * totalWind * (1.0 + Math.abs(uBend * 3.0));
             textRef.current.rotation.x = Math.atan(dz_dy);
         }
@@ -1037,16 +971,16 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
             const totalWind = 0.02 + uWindStrength;
             const flutter = Math.sin(uTime * 2.0 + y * 2.0) * totalWind * (1.0 + Math.abs(uBend * 3.0));
 
-            // PAMIX塗AJ! CaXX pXXszczyzna zgina siX?w przX竏 (+Z wzglX媎em rodzica).
+            // PAMIĘTAJ! Cała płaszczyzna zgina się w przód (+Z względem rodzica).
             // 我们已经在卡片的外侧（背面），希望避开当前面
             // 早些时候错误地翻转了所有旋转的角度 -(bendAmount...)
             buttonGroupRef.current.position.z = bendAmount + flutter - 0.03;
 
-            // ObrX竧 przycisku by przylegaX?do krzywizny, bX媎X甤 po przeciwnej stronie (dodatkowe odwrX竎enie o Pi)
+            // Obróć przycisk by przylegał do krzywizny, bo jest po przeciwnej stronie (dodatkowe odwrócenie o Pi)
             const dz_dy = 2.0 * y * uBend + 2.0 * Math.cos(uTime * 2.0 + y * 2.0) * totalWind * (1.0 + Math.abs(uBend * 3.0));
             buttonGroupRef.current.rotation.x = Math.PI + Math.atan(dz_dy);
 
-            // Hover animacja powiX媖szania dla przycisku (napis siX?powiX媖sza)
+            // Hover animacja powiększania dla przycisku (napis się powiększa)
             const targetScale = btnHovered ? 1.08 : 1;
             buttonGroupRef.current.scale.lerp(_tempScale.set(targetScale, targetScale, 1), 0.15);
         }
@@ -1214,7 +1148,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                     position={[0, 0.92, 0]}
                     rotation={[Math.PI, 0, 0]}
                 >
-                    {/* 按钮的视觉框（无事件） */}
+                    {/* 按钮的视觉层（无事件） */}
                     <mesh>
                         <planeGeometry args={[1.2, 1.2 / 3.613]} />
                         <meshBasicMaterial color="#ffffff"
@@ -1302,13 +1236,13 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                         textAlign="center"
                         fillOpacity={0} // Start hidden
                     >
-                        {previewDescription || '点击项目查看详情页面。'}
+                        {previewDescription || '点击查看详情'}
                     </Text>
                 </group>
 
                 <group
                     ref={techStackGroupRef}
-                    position={[0, 0.30, 0]} // PomiX媎zy Project Details a przyciskiem Open Project
+                    position={[0, 0.30, 0]} // Move Project Details and the Open Project button
                     rotation={[Math.PI, 0, 0]}
                 >
                     {project.techStack && project.techStack.length > 0 && (
@@ -1329,7 +1263,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                     {/* 水平排列 logo 的容器 */}
                     <group position={[0, -0.05, 0.01]}>
                         {project.techStack && project.techStack.map((logoPath, idx) => {
-                            // 方块排布（4 个居中）
+                            // 方块排布：X 个居中
                             const spacing = 0.30;
                             const startX = -((project.techStack.length - 1) * spacing) / 2;
                             const xPos = startX + (idx * spacing);

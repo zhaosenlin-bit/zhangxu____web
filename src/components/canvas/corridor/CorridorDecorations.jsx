@@ -383,7 +383,7 @@ const CorridorDecorations = ({
             image: '/cartoon/media/handdrawn-tech/frame-debug-notes.png',
             imageWidth: frameInnerWidth,
             imageHeight: frameInnerHeight,
-            signature: '森路 · Senlin',
+            signature: '张旭 · 个人站',
             signatureX: 0,
             signatureY: -0.4,
             signatureSize: 0.001,
