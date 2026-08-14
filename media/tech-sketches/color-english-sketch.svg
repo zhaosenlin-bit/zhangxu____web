@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#fff7e1"/>
+
+  <!-- decorative shapes -->
+  <circle cx="80" cy="60" r="20" fill="#7ad9ff" opacity="0.3"/>
+  <circle cx="560" cy="80" r="30" fill="#ff5c8a" opacity="0.3"/>
+  <circle cx="540" cy="290" r="25" fill="#ffd86b" opacity="0.4"/>
+
+  <!-- rainbow arches -->
+  <g fill="none" stroke-width="18" stroke-linecap="round">
+    <path d="M150 240 Q320 60 490 240" stroke="#ff5c8a"/>
+    <path d="M170 250 Q320 90 470 250" stroke="#ff9248"/>
+    <path d="M190 260 Q320 120 450 260" stroke="#ffd86b"/>
+    <path d="M210 270 Q320 150 430 270" stroke="#a5e17c"/>
+    <path d="M230 280 Q320 180 410 280" stroke="#7ad9ff"/>
+    <path d="M250 290 Q320 210 390 290" stroke="#a5c4ff"/>
+  </g>
+
+  <!-- eyes on each arch -->
+  <g fill="#fff" stroke="#1a1a1a" stroke-width="3">
+    <circle cx="200" cy="245" r="18"/><circle cx="320" cy="200" r="20"/><circle cx="440" cy="245" r="18"/>
+  </g>
+  <g fill="#1a1a1a">
+    <circle cx="200" cy="245" r="4"/><circle cx="320" cy="200" r="5"/><circle cx="440" cy="245" r="4"/>
+  </g>
+
+  <!-- small letters above -->
+  <g font-family="'Comic Sans MS', cursive" font-size="22" font-weight="700" fill="#ff5c8a">
+    <text x="170" y="215">A</text><text x="290" y="160">B</text><text x="420" y="215">C</text>
+  </g>
+
+  <!-- title -->
+  <text x="320" y="335" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="26" font-weight="700" fill="#1a1a1a">Color English 趣学拼读</text>
+</svg>

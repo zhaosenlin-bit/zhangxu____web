@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="none"/>
+  <g fill="#3776ab" stroke="#1a1a1a" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M128 36 Q82 36 82 70 L82 110 Q82 124 96 124 L160 124 Q174 124 174 138 L174 178 Q174 200 158 200 L108 200"/>
+    <circle cx="108" cy="78" r="8" fill="#ffd86b"/>
+    <path d="M128 220 Q174 220 174 186 L174 146 Q174 132 160 132 L96 132 Q82 132 82 118 L82 78 Q82 56 98 56 L148 56"/>
+    <circle cx="148" cy="178" r="8" fill="#ffd86b"/>
+  </g>
+  <text x="128" y="240" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="16" font-weight="700" fill="#1a1a1a">Python</text>
+</svg>

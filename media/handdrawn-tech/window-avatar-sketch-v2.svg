@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="8" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply"/>
+    </filter>
+    <style>
+      .ink{fill:none;stroke:#222;stroke-width:5.2;stroke-linecap:round;stroke-linejoin:round}
+      .thin{fill:none;stroke:#222;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .wash-blue{fill:#99d8ee;opacity:.38}
+      .wash-yellow{fill:#f5ce66;opacity:.45}
+      .wash-red{fill:#f48aa3;opacity:.36}
+      .paper{fill:#fffdf5;opacity:.78}
+    </style>
+  </defs>
+  <g filter="url(#paper)">
+    <path class="paper" d="M90 54c92-19 253-12 333 8 4 97 2 255-9 386-99 17-219 16-328-4-13-119-10-282 4-390z"/>
+    <path class="wash-blue" d="M116 74c60-27 215-25 286 8 22 74 14 255-2 329-78 28-211 26-287-3-25-84-28-256 3-334z"/>
+    <path class="thin" d="M100 61c87-19 247-15 324 7"/>
+    <path class="thin" d="M94 70c-8 106-5 244 4 369"/>
+    <path class="thin" d="M421 66c9 112 3 255-9 376"/>
+    <path class="thin" d="M99 439c87 18 230 19 314 1"/>
+    <path class="wash-yellow" d="M190 304c54-28 131-25 169 8 31 27 47 85 46 139-79 21-175 23-253 2 0-59 9-121 38-149z"/>
+    <path class="ink" d="M176 447c1-49 8-97 32-125 31-38 105-44 145-6 34 31 46 82 44 133"/>
+    <path class="thin" d="M208 331c26 24 111 25 139-3"/>
+    <path class="wash-blue" d="M183 314c21-21 54-31 88-32 49-1 85 13 109 38-46 16-142 17-197-6z"/>
+    <path class="ink" d="M185 197c2-58 41-101 91-104 60-4 105 40 107 101 2 63-36 113-96 116-58 2-104-46-102-113z"/>
+    <path class="thin" d="M212 188c16-11 37-13 59-8"/>
+    <path class="thin" d="M293 182c20-9 43-8 60 4"/>
+    <path class="thin" d="M243 226c2 8 2 15-3 21"/>
+    <path class="thin" d="M258 262c16 14 46 13 64-1"/>
+    <path class="wash-red" d="M207 242c19-7 35-3 43 9-10 13-35 13-43-9z"/>
+    <path class="wash-red" d="M330 237c19-6 33-1 39 10-11 12-32 10-39-10z"/>
+    <path class="ink" d="M181 200c-18-34-4-82 28-108 19-16 49-26 83-22 43 5 78 32 91 71 7 20 8 41 4 61"/>
+    <path class="thin" d="M213 105c10-26 39-44 75-48"/>
+    <path class="thin" d="M240 86c39-6 71 4 96 29"/>
+    <path class="thin" d="M189 187c-22-10-35 8-34 32 1 23 18 38 36 30"/>
+    <path class="thin" d="M381 184c23-7 35 12 31 35-3 22-21 35-37 27"/>
+    <path class="wash-blue" d="M143 179c10-34 31-58 55-72 9 33 9 115-5 147-24-11-55-40-50-75z"/>
+    <path class="wash-blue" d="M377 104c26 18 44 47 47 81 3 31-21 57-48 67-10-47-9-103 1-148z"/>
+    <path class="ink" d="M155 249c-28-24-32-73-13-112 12-25 34-46 57-57"/>
+    <path class="ink" d="M379 81c28 20 47 52 50 88 4 39-15 69-50 83"/>
+    <path class="ink" d="M151 354c-27 8-55-2-70-26-9-15-8-37 4-48 15-14 39-6 43 13"/>
+    <path class="thin" d="M83 280c15 16 30 33 43 51"/>
+    <path class="thin" d="M108 269c6 19 11 39 15 60"/>
+    <path class="thin" d="M68 301c17 8 34 18 51 30"/>
+    <path class="thin" d="M352 343c24 9 43 26 58 51"/>
+    <path class="thin" d="M224 371c29 18 89 19 121 1"/>
+    <path class="thin" d="M234 414c21 10 76 11 100 1"/>
+    <path class="thin" d="M111 92c-13 13-20 28-25 46"/>
+    <path class="thin" d="M403 94c14 18 21 42 22 64"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>.ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#222;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.line{fill:none;stroke:#6fbfd3;stroke-width:5;stroke-linecap:round;opacity:.65}.paper{fill:#fffdf4}.b{fill:#9dd9e9;opacity:.34}.y{fill:#ffd86f;opacity:.58}.r{fill:#f58fac;opacity:.46}.g{fill:#b8dc8a;opacity:.5}text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#222}</style>
+  <path class="paper" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="b" d="M109 98c185-25 495-21 681 0 17 88 12 233-7 322-205 22-465 22-674-1-19-97-18-224 0-321z"/>
+  <path class="ink" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="line" d="M228 181c102-34 215-37 347-10M228 181c42 73 92 131 151 175M575 171c-48 77-113 138-196 185M171 315c85-76 160-120 221-129M392 186c72 36 146 79 222 129M171 315c78 41 149 53 208 41M379 356c75-13 153-27 235-41"/>
+  <circle class="y" cx="228" cy="181" r="32"/><circle class="r" cx="392" cy="186" r="28"/><circle class="g" cx="575" cy="171" r="31"/><circle class="y" cx="171" cy="315" r="29"/><circle class="r" cx="379" cy="356" r="31"/><circle class="g" cx="614" cy="315" r="30"/>
+  <path class="ink" d="M198 181c2-24 17-36 35-33 22 4 34 21 29 42-6 24-30 34-50 23-10-6-16-15-14-32z"/>
+  <path class="ink" d="M366 185c2-22 15-32 32-30 20 3 31 19 27 38-5 21-27 31-45 22-9-5-16-15-14-30z"/>
+  <path class="ink" d="M546 171c2-24 17-36 35-33 21 4 34 21 29 42-6 23-29 34-49 24-11-6-17-16-15-33z"/>
+  <path class="ink" d="M145 314c2-22 15-32 31-30 21 3 31 19 27 38-5 21-27 31-45 22-10-5-15-14-13-30z"/>
+  <path class="ink" d="M351 355c1-23 17-35 35-32 21 4 33 21 28 41-6 22-28 32-48 23-10-5-16-16-15-32z"/>
+  <path class="ink" d="M586 314c2-23 16-35 34-32 21 4 33 21 28 41-6 22-28 32-48 23-10-5-16-16-14-32z"/>
+  <path class="thin" d="M739 132c22 16 37 35 45 61M709 374c35 2 65 11 91 29M109 167c25-21 54-35 86-42"/>
+  <text x="312" y="462" font-size="36">neural stars</text>
+</svg>

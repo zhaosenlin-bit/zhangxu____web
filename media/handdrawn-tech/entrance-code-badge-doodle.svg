@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .thin{fill:none;stroke:#222;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .b{fill:#8bd2e8;opacity:.35}.y{fill:#ffd86f;opacity:.45}.p{fill:#f58fac;opacity:.42}
+    text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#242424}
+  </style>
+  <path class="b" d="M92 224c4-58 44-93 101-85 28-47 102-57 143-16 47-14 88 13 96 61 48 20 57 91 17 124 2 51-43 87-96 74-41 36-113 28-143-19-54 4-96-28-101-82-34-18-45-42-17-57z"/>
+  <path class="ink" d="M92 224c4-58 44-93 101-85 28-47 102-57 143-16 47-14 88 13 96 61 48 20 57 91 17 124 2 51-43 87-96 74-41 36-113 28-143-19-54 4-96-28-101-82-34-18-45-42-17-57z"/>
+  <path class="thin" d="M205 224l-48 40 49 40M306 224l49 40-49 41M281 203c-12 42-26 84-43 126"/>
+  <path class="y" d="M98 94c21 8 35 23 43 45 15-20 35-31 62-34-18 27-43 45-76 53-6-25-17-46-29-64z"/>
+  <path class="thin" d="M98 94c21 8 35 23 43 45 15-20 35-31 62-34-18 27-43 45-76 53-6-25-17-46-29-64z"/>
+  <circle class="p" cx="394" cy="119" r="18"/>
+  <path class="thin" d="M386 78c7 11 13 22 17 35M359 117c13 2 25 3 39 2M128 398c7 17 17 30 31 42M170 397c-8 16-20 29-35 39"/>
+  <text x="203" y="386" font-size="32">code</text>
+</svg>

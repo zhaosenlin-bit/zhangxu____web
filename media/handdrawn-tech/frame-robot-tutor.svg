@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>.ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#222;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}.paper{fill:#fffdf4}.b{fill:#9dd9e9;opacity:.38}.y{fill:#ffd86f;opacity:.52}.r{fill:#f58fac;opacity:.38}.g{fill:#b8dc8a;opacity:.45}text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#222}</style>
+  <path class="paper" d="M69 58c222-23 544-22 762 2 23 115 20 282-5 397-216 27-547 27-758 0C45 338 46 179 69 58z"/>
+  <path class="ink" d="M69 58c222-23 544-22 762 2 23 115 20 282-5 397-216 27-547 27-758 0C45 338 46 179 69 58z"/>
+  <path class="g" d="M428 130c87-20 184-16 268 8 20 67 19 145-1 215-85 20-180 21-268 0-17-73-17-148 1-223z"/>
+  <path class="ink" d="M426 130c89-19 184-16 269 8 20 67 18 145-1 215-86 19-180 20-267 0-18-72-17-148-1-223z"/>
+  <path class="thin" d="M466 197c57 8 120 8 180 0M465 252c62 7 127 7 190 0M466 308c47 6 96 7 144 2"/>
+  <path class="b" d="M194 185c60-22 126-18 177 8 12 52 9 112-5 163-53 21-123 20-174-2-18-51-18-116 2-169z"/>
+  <path class="ink" d="M193 184c60-19 126-16 178 9 11 52 9 111-6 163-53 20-122 20-173-2-18-52-18-116 1-170z"/>
+  <path class="thin" d="M245 166c-11-35 0-64 30-83M311 166c12-34 39-54 79-62"/>
+  <circle cx="247" cy="257" r="13" fill="#222"/><circle cx="321" cy="258" r="13" fill="#222"/>
+  <path class="thin" d="M259 310c22 15 51 15 75 0M171 250c-35-5-64 9-85 42M381 254c34-3 61 13 79 49"/>
+  <path class="y" d="M167 368c70 33 155 36 233 7 18 29 17 63-2 92-95 20-187 18-275-4-6-38 9-71 44-95z"/>
+  <path class="ink" d="M126 464c-7-39 7-72 41-96 70 33 155 36 233 7 18 29 17 63-2 92"/>
+  <text x="334" y="462" font-size="36">robot tutor</text>
+</svg>

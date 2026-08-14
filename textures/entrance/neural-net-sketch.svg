@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="none"/>
+  <!-- connections -->
+  <g stroke="#7ad9ff" stroke-width="2" fill="none">
+    <line x1="50" y1="80" x2="128" y2="60"/>
+    <line x1="50" y1="80" x2="128" y2="128"/>
+    <line x1="50" y1="80" x2="128" y2="196"/>
+    <line x1="50" y1="176" x2="128" y2="60"/>
+    <line x1="50" y1="176" x2="128" y2="128"/>
+    <line x1="50" y1="176" x2="128" y2="196"/>
+    <line x1="128" y1="60" x2="206" y2="80"/>
+    <line x1="128" y1="60" x2="206" y2="176"/>
+    <line x1="128" y1="128" x2="206" y2="80"/>
+    <line x1="128" y1="128" x2="206" y2="176"/>
+    <line x1="128" y1="196" x2="206" y2="80"/>
+    <line x1="128" y1="196" x2="206" y2="176"/>
+  </g>
+  <!-- input nodes -->
+  <g fill="#ffd86b" stroke="#1a1a1a" stroke-width="2.5">
+    <circle cx="50" cy="80" r="12"/>
+    <circle cx="50" cy="176" r="12"/>
+  </g>
+  <!-- hidden nodes -->
+  <g fill="#ff5c8a" stroke="#1a1a1a" stroke-width="2.5">
+    <circle cx="128" cy="60" r="12"/>
+    <circle cx="128" cy="128" r="12"/>
+    <circle cx="128" cy="196" r="12"/>
+  </g>
+  <!-- output nodes -->
+  <g fill="#a5e17c" stroke="#1a1a1a" stroke-width="2.5">
+    <circle cx="206" cy="80" r="12"/>
+    <circle cx="206" cy="176" r="12"/>
+  </g>
+  <!-- label -->
+  <text x="128" y="240" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="16" font-weight="700" fill="#1a1a1a">Neural Network</text>
+</svg>

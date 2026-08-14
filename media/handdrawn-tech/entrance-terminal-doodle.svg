@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <style>
+    .ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .thin{fill:none;stroke:#222;stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round}
+    .paper{fill:#fffdf3;opacity:.86}.blue{fill:#99d8ee;opacity:.26}.green{fill:#b9dd8b;opacity:.36}.pink{fill:#f58fac;opacity:.42}.yellow{fill:#ffd86f;opacity:.5}
+    text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#242424}
+  </style>
+  <path class="paper" d="M73 58c146-18 356-13 488 7 18 72 15 214-3 294-148 20-343 17-489-2-20-80-17-218 4-299z"/>
+  <path class="blue" d="M91 83c119-14 345-12 443 5 8 30 10 63 5 91-132 9-312 10-451 0-6-31-5-66 3-96z"/>
+  <path class="ink" d="M72 64c159-17 342-16 486 4 19 76 18 214-5 288-147 19-333 20-482 0-20-78-17-212 1-292z"/>
+  <path class="thin" d="M78 152c151 12 323 13 472 2"/>
+  <circle cx="111" cy="108" r="12" class="pink"/>
+  <circle cx="150" cy="106" r="12" class="yellow"/>
+  <circle cx="190" cy="107" r="12" class="green"/>
+  <text x="108" y="223" font-size="33">$ make tiny-magic</text>
+  <text x="108" y="276" font-size="34">while (curious)</text>
+  <text x="151" y="328" font-size="34">draw();</text>
+  <path class="thin" d="M445 220c28-5 55-3 82 5M444 274c32-4 61 1 85 13M444 324c26 1 52 6 78 16"/>
+</svg>

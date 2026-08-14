@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>.ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#222;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}.paper{fill:#fffdf4}.b{fill:#9dd9e9;opacity:.32}.y{fill:#ffd86f;opacity:.5}.r{fill:#f58fac;opacity:.4}.g{fill:#b8dc8a;opacity:.45}text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#222}</style>
+  <path class="paper" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="ink" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="b" d="M170 219c167-24 398-21 556 4 13 56 9 126-8 181-172 21-370 19-543-3-20-58-19-126-5-182z"/>
+  <path class="ink" d="M166 220c166-23 401-21 560 4 14 55 10 125-8 180-171 21-371 19-542-3-21-57-20-126-10-181z"/>
+  <path class="thin" d="M199 273c149 16 330 16 489 0M204 338c144 15 321 17 480 1"/>
+  <path class="thin" d="M236 252c0 43-1 84-3 124M290 248c0 43-1 84-3 124M345 247c0 42-2 84-4 125M399 246c2 42 1 84-1 126M455 246c2 43 2 86 0 128M512 248c2 43 1 85-2 126M568 249c3 42 2 84 0 126M623 252c3 42 2 82 0 120"/>
+  <path class="y" d="M250 124c30-28 65-43 108-41-8 41-29 72-64 95 36 8 64 27 87 56-49 11-91 1-128-28-22-24-23-52-3-82z"/>
+  <path class="thin" d="M250 124c30-28 65-43 108-41-8 41-29 72-64 95 36 8 64 27 87 56-49 11-91 1-128-28"/>
+  <path class="r" d="M594 107c43-8 84 2 119 29-33 28-70 41-114 39 24 29 34 63 31 103-44-24-70-57-80-101-2-35 12-59 44-70z"/>
+  <path class="thin" d="M594 107c43-8 84 2 119 29-33 28-70 41-114 39 24 29 34 63 31 103-44-24-70-57-80-101"/>
+  <path class="thin" d="M413 130l-35 29 36 27M468 129l38 30-38 29M453 113c-13 31-24 62-34 94"/>
+  <text x="316" y="462" font-size="36">keyboard rhythm</text>
+</svg>

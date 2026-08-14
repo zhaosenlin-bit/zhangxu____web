@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .ink{fill:none;stroke:#222;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+    .thin{fill:none;stroke:#222;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .b{fill:#8bd2e8;opacity:.42}.y{fill:#ffd86f;opacity:.58}.r{fill:#f58fac;opacity:.52}
+    text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#242424}
+  </style>
+  <path class="b" d="M136 121c73-23 184-20 244 0 29 67 23 205 0 270-68 23-186 24-247-2-25-67-30-202 3-268z"/>
+  <path class="ink" d="M135 125c78-15 173-15 245-1 22 73 22 195 2 263-72 19-178 20-248 0-22-73-21-190 1-262z"/>
+  <path class="y" d="M205 194c35-12 78-9 111 3 10 34 10 83-1 118-33 11-79 11-111 0-10-36-11-86 1-121z"/>
+  <path class="ink" d="M209 197c36-8 72-7 105 1 9 33 9 80 0 113-34 9-73 10-106 0-10-34-10-80 1-114z"/>
+  <path class="r" d="M232 220c21-10 48-8 66 4 5 21 4 49-3 67-21 6-50 5-67-4-8-21-8-49 4-67z"/>
+  <path class="thin" d="M104 185c-24-3-47-1-69 6M104 253c-24-2-47 1-68 7M105 323c-24 0-46 4-67 11"/>
+  <path class="thin" d="M408 185c21-4 43-4 68 1M407 253c23-1 47 2 70 8M407 323c23 0 44 6 66 13"/>
+  <path class="thin" d="M181 94c-2-22 1-41 5-60M246 93c-2-22 1-41 6-59M314 94c-3-22 1-42 8-59"/>
+  <path class="thin" d="M181 418c-2 22 0 42 5 60M247 419c-1 21 2 41 7 59M314 417c-1 22 3 42 8 58"/>
+  <circle cx="240" cy="250" r="9" fill="#222"/>
+  <circle cx="292" cy="279" r="9" fill="#222"/>
+  <text x="220" y="458" font-size="48">AI</text>
+</svg>

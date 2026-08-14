@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="avBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fef7ed"/>
+      <stop offset="1" stop-color="#fde2d4"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="120" fill="url(#avBg)" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- hair -->
+  <path d="M76 102 Q80 64 128 64 Q176 64 180 102 Q166 84 142 88 Q120 76 100 88 Q86 84 76 102 Z" fill="#3a3a3a" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- head -->
+  <circle cx="128" cy="125" r="42" fill="#ffe0c2" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- earphones -->
+  <path d="M85 110 Q85 75 128 75 Q171 75 171 110" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="78" y="106" width="10" height="18" rx="3" fill="#ff5c8a" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="168" y="106" width="10" height="18" rx="3" fill="#ff5c8a" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- eyes -->
+  <ellipse cx="115" cy="125" rx="3.5" ry="5" fill="#1a1a1a"/>
+  <ellipse cx="141" cy="125" rx="3.5" ry="5" fill="#1a1a1a"/>
+  <!-- blush -->
+  <ellipse cx="108" cy="140" rx="5" ry="2.5" fill="#ff5c8a" opacity="0.4"/>
+  <ellipse cx="148" cy="140" rx="5" ry="2.5" fill="#ff5c8a" opacity="0.4"/>
+  <!-- smile -->
+  <path d="M118 145 Q128 154 138 145" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- hoodie -->
+  <path d="M82 200 Q92 175 110 168 L146 168 Q164 175 174 200 Z" fill="#7ad9ff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- name -->
+  <text x="128" y="222" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="14" font-weight="700" fill="#1a1a1a">Senlin</text>
+</svg>

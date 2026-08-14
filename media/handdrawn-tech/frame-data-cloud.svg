@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>.ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#222;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.paper{fill:#fffdf4}.b{fill:#9dd9e9;opacity:.36}.y{fill:#ffd86f;opacity:.5}.r{fill:#f58fac;opacity:.42}.g{fill:#b8dc8a;opacity:.45}text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#222}</style>
+  <path class="paper" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="ink" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="b" d="M195 190c10-71 58-114 128-105 33-55 124-68 176-16 61-22 120 13 136 74 59 20 77 99 34 145-49 53-145 61-252 57-108-4-214 1-263-51-38-40-25-88 41-104z"/>
+  <path class="ink" d="M195 190c10-71 58-114 128-105 33-55 124-68 176-16 61-22 120 13 136 74 59 20 77 99 34 145-49 53-145 61-252 57-108-4-214 1-263-51-38-40-25-88 41-104z"/>
+  <path class="thin" d="M282 386c17 22 24 46 22 73M388 381c8 27 11 52 8 78M495 381c-7 27-11 52-9 77M601 373c-19 23-29 48-31 76"/>
+  <circle class="y" cx="282" cy="386" r="11"/><circle class="r" cx="388" cy="381" r="11"/><circle class="g" cx="495" cy="381" r="11"/><circle class="y" cx="601" cy="373" r="11"/>
+  <path class="thin" d="M316 205h60M316 249h130M316 294h89M489 199h78M489 245h94M489 291h66"/>
+  <path class="g" d="M698 112c32-35 71-50 119-43-11 44-36 78-76 102 38 11 65 34 86 68-51 7-93-6-127-39-19-29-20-59-2-88z"/>
+  <path class="thin" d="M698 112c32-35 71-50 119-43-11 44-36 78-76 102 38 11 65 34 86 68-51 7-93-6-127-39"/>
+  <text x="348" y="463" font-size="36">data cloud</text>
+</svg>

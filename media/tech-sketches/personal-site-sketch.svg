@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#fff8e7"/>
+
+  <!-- browser window -->
+  <rect x="60" y="50" width="520" height="240" rx="12" fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="60" y="50" width="520" height="32" rx="12" fill="#fff3d6"/>
+  <circle cx="82" cy="66" r="5" fill="#ff5c8a"/>
+  <circle cx="100" cy="66" r="5" fill="#ffd86b"/>
+  <circle cx="118" cy="66" r="5" fill="#a5e17c"/>
+  <text x="320" y="71" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#888">www.zhaosenlin12.dev</text>
+
+  <!-- left side: lines -->
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <rect x="90" y="105" width="200" height="20" rx="6" fill="#d6e8ff"/>
+    <rect x="90" y="135" width="160" height="20" rx="6" fill="#d6e8ff"/>
+    <rect x="90" y="165" width="220" height="20" rx="6" fill="#d6e8ff"/>
+    <rect x="90" y="195" width="120" height="20" rx="6" fill="#d6e8ff"/>
+  </g>
+
+  <!-- DOWNLOAD button -->
+  <rect x="90" y="230" width="130" height="34" rx="6" fill="#ffd86b" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="155" y="253" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" font-weight="700" fill="#1a1a1a">DOWN</text>
+
+  <!-- right side: grid -->
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <rect x="340" y="105" width="220" height="160" rx="6" fill="#fff"/>
+    <line x1="395" y1="105" x2="395" y2="265"/>
+    <line x1="450" y1="105" x2="450" y2="265"/>
+    <line x1="505" y1="105" x2="505" y2="265"/>
+    <line x1="340" y1="158" x2="560" y2="158"/>
+    <line x1="340" y1="211" x2="560" y2="211"/>
+  </g>
+  <g fill="#7ad9ff" opacity="0.55">
+    <rect x="343" y="108" width="50" height="48"/><rect x="453" y="161" width="50" height="48"/>
+  </g>
+  <g fill="#ff5c8a" opacity="0.55">
+    <rect x="508" y="108" width="50" height="48"/>
+  </g>
+
+  <!-- URL bottom -->
+  <text x="320" y="325" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="20" font-weight="700" fill="#1a1a1a">个人作品集 · www.zhaosenlin12</text>
+</svg>

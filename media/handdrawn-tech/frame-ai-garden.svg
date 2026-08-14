@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>.ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#222;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.p{fill:#fffdf4}.b{fill:#9dd9e9;opacity:.34}.g{fill:#b8dc8a;opacity:.48}.y{fill:#ffd86f;opacity:.52}.r{fill:#f58fac;opacity:.42}text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#222}</style>
+  <path class="p" d="M64 55c200-28 586-25 774 4 23 113 19 273-6 401-221 26-546 25-766-2C41 331 40 176 64 55z"/>
+  <path class="b" d="M96 90c173-27 548-22 712 10 12 84 9 231-11 319-209 19-495 18-700-2-17-102-16-229-1-327z"/>
+  <path class="ink" d="M64 55c200-28 586-25 774 4 23 113 19 273-6 401-221 26-546 25-766-2C41 331 40 176 64 55z"/>
+  <path class="thin" d="M142 378c126 31 485 31 620-2"/>
+  <path class="y" d="M329 200c73-24 161-22 229 3 18 64 15 137-7 195-64 22-154 24-219 1-25-58-26-142-3-199z"/>
+  <path class="ink" d="M326 202c74-20 158-18 231 3 17 64 16 131-7 190-64 22-153 23-218 2-24-61-26-136-6-195z"/>
+  <path class="thin" d="M388 259c47-10 93-11 137 1M390 312c42-6 83-6 123 1M405 363c31-4 62-3 92 5"/>
+  <path class="g" d="M442 196c-17-64-8-112 25-151 27 37 33 82 15 137 49-33 98-39 149-18-44 46-96 62-158 49-37 63-91 93-160 91 47-33 86-66 129-108z"/>
+  <path class="ink" d="M442 196c-17-64-8-112 25-151 27 37 33 82 15 137 49-33 98-39 149-18-44 46-96 62-158 49-37 63-91 93-160 91 47-33 86-66 129-108z"/>
+  <circle cx="416" cy="280" r="13" class="r"/><circle cx="484" cy="282" r="13" class="g"/><circle cx="450" cy="333" r="13" class="b"/>
+  <path class="thin" d="M416 280c25 7 47 8 68 2M416 280c10 20 21 37 34 53M484 282c-8 19-19 36-34 51"/>
+  <text x="384" y="455" font-size="36">AI garden</text>
+</svg>

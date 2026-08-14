@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>.ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#222;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}.paper{fill:#fffdf4}.b{fill:#9dd9e9;opacity:.38}.y{fill:#ffd86f;opacity:.52}.r{fill:#f58fac;opacity:.42}.g{fill:#b8dc8a;opacity:.45}text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#222}</style>
+  <path class="paper" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="ink" d="M68 60c210-26 558-24 763 3 22 116 19 273-3 394-220 25-540 25-760 0C46 335 46 181 68 60z"/>
+  <path class="thin" d="M185 383c148-86 328-90 532 3"/>
+  <path class="b" d="M165 184c59-18 129-16 188 8 16 54 15 114-4 166-60 19-125 18-184-3-20-55-20-117 0-171z"/>
+  <path class="ink" d="M165 184c59-18 129-16 188 8 16 54 15 114-4 166-60 19-125 18-184-3-20-55-20-117 0-171z"/>
+  <path class="y" d="M373 128c58-19 121-16 178 6 16 50 14 106-2 155-58 18-120 19-176-2-18-50-18-108 0-159z"/>
+  <path class="ink" d="M373 128c58-19 121-16 178 6 16 50 14 106-2 155-58 18-120 19-176-2-18-50-18-108 0-159z"/>
+  <path class="g" d="M554 204c62-21 131-18 191 8 15 52 14 111-4 163-61 19-128 18-188-3-20-54-20-115 1-168z"/>
+  <path class="ink" d="M554 204c62-21 131-18 191 8 15 52 14 111-4 163-61 19-128 18-188-3-20-54-20-115 1-168z"/>
+  <path class="thin" d="M215 245h89M214 299h86M416 188h92M416 244h76M602 267h96M602 321h76"/>
+  <path class="r" d="M273 89c35-37 75-53 125-46-12 46-39 82-82 107 41 12 69 38 91 73-54 5-98-10-132-47-19-31-19-59-2-87z"/>
+  <path class="thin" d="M273 89c35-37 75-53 125-46-12 46-39 82-82 107 41 12 69 38 91 73-54 5-98-10-132-47"/>
+  <text x="316" y="462" font-size="36">model trainer</text>
+</svg>

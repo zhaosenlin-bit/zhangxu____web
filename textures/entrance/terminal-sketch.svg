@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="none"/>
+  <rect x="30" y="60" width="196" height="136" rx="8" fill="#0d1b2a" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="30" y="60" width="196" height="22" fill="#1a2845"/>
+  <circle cx="44" cy="71" r="4" fill="#ff5c8a"/>
+  <circle cx="58" cy="71" r="4" fill="#ffd86b"/>
+  <circle cx="72" cy="71" r="4" fill="#a5e17c"/>
+  <g font-family="'Courier New', monospace" font-size="14" font-weight="700">
+    <text x="42" y="106" fill="#a5e17c">$</text>
+    <text x="56" y="106" fill="#7ad9ff">node</text>
+    <text x="100" y="106" fill="#ffd86b">--run</text>
+    <text x="42" y="128" fill="#a5e17c">$</text>
+    <text x="56" y="128" fill="#ff5c8a">while</text>
+    <text x="106" y="128" fill="#ffd86b">(</text>
+    <text x="116" y="128" fill="#7ad9ff">true</text>
+    <text x="156" y="128" fill="#ffd86b">)</text>
+    <text x="42" y="150" fill="#ff5c8a">  </text>
+    <text x="56" y="150" fill="#a5e17c">explore()</text>
+    <text x="42" y="172" fill="#a5e17c">&#62; ready</text>
+  </g>
+</svg>

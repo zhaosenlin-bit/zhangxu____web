@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .line{fill:none;stroke:#6fbfd3;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;opacity:.72}
+    .ink{fill:none;stroke:#222;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .pink{fill:#f58fac}.yellow{fill:#ffd86f}.green{fill:#b9dd8b}
+    text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#242424}
+  </style>
+  <path class="line" d="M111 182c83 23 170 19 286-7M111 182c64 64 101 133 132 209M111 182c97 74 179 110 287 143M111 332c94-65 178-117 286-157M111 332c88 18 184 19 287-7M242 106c-4 105-5 190 1 285M242 106c55 83 106 145 156 219"/>
+  <circle cx="111" cy="182" r="31" class="yellow"/>
+  <circle cx="242" cy="106" r="31" class="pink"/>
+  <circle cx="398" cy="175" r="31" class="green"/>
+  <circle cx="111" cy="332" r="31" class="yellow"/>
+  <circle cx="243" cy="391" r="31" class="pink"/>
+  <circle cx="398" cy="325" r="31" class="green"/>
+  <path class="ink" d="M82 181c3-24 16-37 31-34 22 4 35 20 30 39-5 23-25 34-46 26-12-4-17-14-15-31z"/>
+  <path class="ink" d="M211 105c2-25 17-36 35-32 20 5 33 22 28 42-6 23-27 32-47 24-12-5-18-16-16-34z"/>
+  <path class="ink" d="M369 174c2-23 18-35 36-32 22 5 32 22 28 42-6 23-28 33-48 24-12-5-18-16-16-34z"/>
+  <path class="ink" d="M82 331c3-24 16-38 34-34 21 4 32 20 27 41-5 22-25 33-47 24-12-5-16-16-14-31z"/>
+  <path class="ink" d="M212 391c2-23 17-36 35-32 21 4 33 22 28 42-6 22-28 32-48 23-11-5-17-15-15-33z"/>
+  <path class="ink" d="M369 324c2-23 18-36 36-32 21 5 32 22 28 42-6 23-28 33-48 24-12-5-18-16-16-34z"/>
+  <text x="142" y="458" font-size="34">tiny neural garden</text>
+</svg>

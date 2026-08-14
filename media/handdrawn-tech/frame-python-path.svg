@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>.ink{fill:none;stroke:#222;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#222;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}.paper{fill:#fffdf4}.b{fill:#9dd9e9;opacity:.38}.y{fill:#ffd86f;opacity:.55}.r{fill:#f58fac;opacity:.38}.g{fill:#b8dc8a;opacity:.44}text{font-family:"Comic Sans MS","Cabin Sketch",cursive;font-weight:700;fill:#222}</style>
+  <path class="paper" d="M69 58c222-23 544-22 762 2 23 115 20 282-5 397-216 27-547 27-758 0C45 338 46 179 69 58z"/>
+  <path class="ink" d="M69 58c222-23 544-22 762 2 23 115 20 282-5 397-216 27-547 27-758 0C45 338 46 179 69 58z"/>
+  <path class="thin" d="M136 375c89-93 178-130 278-108 111 24 184-13 274-128"/>
+  <path class="thin" d="M167 386c86-77 156-98 244-80 121 25 215-23 302-139"/>
+  <path class="b" d="M180 299c36-58 78-91 129-104 8 47-6 90-43 130 48-8 92 0 132 25-63 31-125 32-185 2-18-12-29-30-33-53z"/>
+  <path class="ink" d="M180 299c36-58 78-91 129-104 8 47-6 90-43 130 48-8 92 0 132 25-63 31-125 32-185 2-18-12-29-30-33-53z"/>
+  <path class="y" d="M555 132c48-29 101-28 139 4 32 28 40 77 17 116-25 43-79 61-132 43-48-16-76-59-64-103 6-22 19-44 40-60z"/>
+  <path class="ink" d="M548 299c-43-26-54-76-29-119 32-55 99-72 154-40 45 26 60 82 34 123-31 50-103 66-159 36z"/>
+  <path class="thin" d="M588 205c14-12 31-15 49-9M644 223c16-7 32-8 49-2M606 260c26 16 58 16 86 0"/>
+  <path class="r" d="M618 74c25-27 56-43 95-47-6 38-23 68-54 89"/>
+  <path class="thin" d="M618 74c25-27 56-43 95-47-6 38-23 68-54 89"/>
+  <circle cx="615" cy="224" r="8" fill="#222"/><circle cx="679" cy="225" r="8" fill="#222"/>
+  <text x="330" y="462" font-size="36">python path</text>
+</svg>
