@@ -1,0 +1,139 @@
+"""subject_math 包单元测试：使用仓库真实数据验证加载、校验、错因、路径、Prompt。"""
+from __future__ import annotations
+
+import sys
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "packages"))
+
+from subject_math import (  # noqa: E402
+    SubjectMathData,
+    analyze_error,
+    build_diagnose_prompt,
+    build_hint_prompt,
+    build_mistake_prompt,
+    collect_prerequisites,
+    load_prompt,
+    recommend_path,
+)
+
+
+class TestSubjectMathData(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.data = SubjectMathData()
+
+    def test_counts_meet_acceptance(self):
+        """验收：知识点 >= 30，题库 >= 60。"""
+        self.assertGreaterEqual(self.data.knowledge_point_count(), 30)
+        self.assertGreaterEqual(self.data.question_count(), 60)
+
+    def test_validate_passes(self):
+        """数据完整性校验通过（重复/引用/枚举/选项）。"""
+        self.assertTrue(self.data.validate())
+
+    def test_grades_covered(self):
+        """覆盖 3-6 年级。"""
+        grades = {k["grade"] for k in self.data.knowledge_points}
+        self.assertEqual(grades, {3, 4, 5, 6})
+
+    def test_every_kp_has_question(self):
+        """每个知识点都有题目支撑。"""
+        for kp in self.data.knowledge_points:
+            self.assertGreater(
+                len(self.data.questions_by_knowledge_point(kp["id"])), 0, f'{kp["id"]} 无题目'
+            )
+
+    def test_get_question(self):
+        q = self.data.get_question("math_q_g3_0005")
+        self.assertIsNotNone(q)
+        self.assertEqual(q["answer"], "23")
+
+    def test_bank_selection(self):
+        """诊断/巩固/复习三类题可按 id 约定筛选。"""
+        self.assertEqual(len(self.data.questions_by_bank("diagnosis")), 42)
+        self.assertEqual(len(self.data.questions_by_bank("practice")), 20)
+        self.assertEqual(len(self.data.questions_by_bank("review")), 10)
+
+
+class TestErrorAnalysis(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.data = SubjectMathData()
+        cls.demo_q = cls.data.get_question("math_q_g3_0005")  # 应用题建模题，答案 23
+
+    def test_correct_answer_returns_none(self):
+        self.assertIsNone(analyze_error(self.demo_q, "23"))
+
+    def test_wrong_answer_returns_error_type(self):
+        result = analyze_error(self.demo_q, "73")
+        self.assertIsNotNone(result)
+        self.assertEqual(result["error_type"], "modeling_error")
+        self.assertEqual(result["label"], "应用题建模错误")
+        self.assertIn("knowledge_point_ids", result)
+
+    def test_unanswered_flagged(self):
+        result = analyze_error(self.demo_q, "")
+        self.assertTrue(result["unanswered"])
+
+    def test_all_five_error_types_covered(self):
+        """5 类错因标签在题库中都有数据支撑。"""
+        from subject_math.error_analysis import ERROR_TYPE_LABELS
+        seen = {q["error_type"] for q in self.data.questions}
+        self.assertEqual(set(ERROR_TYPE_LABELS), seen)
+
+
+class TestPath(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.data = SubjectMathData()
+        cls.kp_by_id = {k["id"]: k for k in cls.data.knowledge_points}
+
+    def test_prerequisites_chain(self):
+        """三位数乘两位数的完整前置链（跨年级）。"""
+        chain = collect_prerequisites("math_g4_three_digit_times_two_digit", self.kp_by_id)
+        self.assertIn("math_g3_multi_digit_times_one_digit", chain)
+        self.assertIn("math_g3_multiples", chain)
+        self.assertIn("math_g3_addition_within_10000", chain)
+
+    def test_recommend_path_orders_prerequisites_first(self):
+        """薄弱知识点推荐：前置知识任务排在自身之前。"""
+        mastery = {
+            "math_g4_three_digit_times_two_digit": 0.2,
+            "math_g3_word_problem_modeling": 0.9,
+        }
+        tasks = recommend_path(mastery, self.kp_by_id, limit=10)
+        kp_ids = [t["knowledge_point_id"] for t in tasks]
+        self.assertIn("math_g4_three_digit_times_two_digit", kp_ids)
+        self.assertLess(
+            kp_ids.index("math_g3_multi_digit_times_one_digit"),
+            kp_ids.index("math_g4_three_digit_times_two_digit"),
+        )
+        # 掌握度达标的 math_g3_word_problem_modeling 不应出现在任务里
+        self.assertNotIn("math_g3_word_problem_modeling", kp_ids)
+
+
+class TestPrompts(unittest.TestCase):
+    def test_three_prompts_available(self):
+        for name in ("diagnose", "scaffold_hint", "mistake_analysis"):
+            content = load_prompt(name)
+            self.assertGreater(len(content), 100, f"{name} 内容过短")
+
+    def test_build_diagnose_prompt(self):
+        from subject_math.loader import SubjectMathData
+        q = SubjectMathData().get_question("math_q_g3_0005")
+        text = build_diagnose_prompt(q, student_answer="73", hint_level=1)
+        self.assertIn("# 本次输入", text)
+        self.assertIn("math_q_g3_0005", text)
+
+    def test_build_hint_and_mistake_prompts(self):
+        from subject_math.loader import SubjectMathData
+        q = SubjectMathData().get_question("math_q_g3_0005")
+        self.assertIn("hint_level", build_hint_prompt(q, "73", 2))
+        self.assertIn("student_answer", build_mistake_prompt(q, "73"))
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
